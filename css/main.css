@@ -1,0 +1,207 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    flex-direction: column;
+}
+
+.my-project {
+    width: 1000px;
+    height: 100%;
+}
+
+.my-project .logo {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 93px;
+}
+
+.my-project .logo svg {
+    width: 19%;
+}
+
+.my-project .landing {
+    display: flex;
+}
+
+.my-project .landing .svg {
+    width: 150%;
+}
+
+.my-project .landing svg {
+    width: 100%;
+    height: auto;
+}
+
+.my-project .landing .text {
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 48px;
+}
+
+.my-project .landing .text h1 {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.my-project .landing .text p {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffffb5;
+    font-size: 12.5px;
+    line-height: 1.8;
+}
+
+.my-project .landing .text button {
+    padding: 15px;
+    width: 46%;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.icon i {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon i:hover {
+    color: hsl(300, 92%, 51%);
+    cursor: pointer;
+    border: 2px solid hsl(300, 92%, 51%);
+}
+
+@media (max-width:1050px) {
+    .parent {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        flex-direction: column;
+        background-size: cover;
+    }
+
+    .my-project {
+        width: 300px;
+        height: auto;
+    }
+
+    .my-project .logo {
+        margin-top: 57px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+
+    .my-project .logo svg {
+        width: 50%;
+    }
+
+    .my-project .landing .svg {
+        width: 126%;
+        margin-top: -20px;
+        margin-right: 34px;
+    }
+
+    .my-project .landing svg {
+        width: 98%;
+        height: auto;
+    }
+
+    .my-project .landing .text {
+        /* padding-top: 25px; */
+        padding-right: 0px;
+        /* padding-bottom: 30px; */
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: -31px;
+    }
+
+    .my-project .landing .text h1 {
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 27px;
+    }
+
+    .my-project .landing .text p {
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffffb5;
+        /* font-size: 12.5px; */
+        line-height: 1.8;
+        width: 86%;
+        /* text-align: center; */
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .my-project .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .my-project .landing .text button {
+        padding: 15px;
+        width: 63%;
+        border-radius: 30px;
+        border: none;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+
+}
